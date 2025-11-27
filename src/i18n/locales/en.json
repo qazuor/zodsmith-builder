@@ -1,0 +1,478 @@
+{
+  "app": {
+    "title": "ZodSmith",
+    "description": "Visual Zod Schema Builder"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "close": "Close",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "load": "Load",
+    "duplicate": "Duplicate",
+    "import": "Import",
+    "export": "Export",
+    "settings": "Settings",
+    "help": "Help",
+    "actions": "Actions",
+    "optional": "optional",
+    "nullable": "nullable",
+    "required": "required"
+  },
+  "actions": {
+    "copy": "Copy",
+    "copied": "Copied!"
+  },
+  "sidebar": {
+    "schemas": "Schemas",
+    "templates": "Templates",
+    "savedSchemas": "Saved Schemas",
+    "noSavedSchemas": "No saved schemas",
+    "createSchemaHint": "Create a schema and save it to see it here",
+    "fields": "fields",
+    "expandSidebar": "Expand sidebar",
+    "collapseSidebar": "Collapse sidebar"
+  },
+  "templates": {
+    "title": "Templates",
+    "description": "Start with a pre-built schema",
+    "use": "Use Template",
+    "simpleUser": "Simple User",
+    "simpleUserDesc": "Basic user with name and email",
+    "completeUser": "Complete User",
+    "completeUserDesc": "Full user profile with all fields",
+    "product": "Product",
+    "productDesc": "E-commerce product schema",
+    "address": "Address",
+    "addressDesc": "Postal address structure",
+    "blogPost": "Blog Post",
+    "blogPostDesc": "Blog article with metadata",
+    "apiResponse": "API Response",
+    "apiResponseDesc": "Standard API response wrapper",
+    "loginForm": "Login Form",
+    "loginFormDesc": "Authentication credentials",
+    "contactForm": "Contact Form",
+    "contactFormDesc": "Contact message form"
+  },
+  "builder": {
+    "title": "Schema Builder",
+    "schemaName": "Schema Name",
+    "schemaDescription": "Schema Description",
+    "schemaDescriptionPlaceholder": "Describe what this schema represents...",
+    "fields": "Fields",
+    "noFields": "No Fields Yet",
+    "noFieldsHint": "Add your first field to start building your schema",
+    "addField": "Add Field",
+    "dragToReorder": "Drag to reorder",
+    "saveSchema": "Save Schema"
+  },
+  "field": {
+    "name": "Field Name",
+    "namePlaceholder": "e.g., firstName, email, userId",
+    "nameHint": "Use camelCase for field names",
+    "type": "Type",
+    "selectType": "Select type",
+    "description": "Description",
+    "descriptionPlaceholder": "Brief description of this field...",
+    "descriptionHint": "Will be added as JSDoc comment in generated code",
+    "defaultValue": "Default Value",
+    "defaultValueHint": "Value used when field is not provided"
+  },
+  "fieldTypes": {
+    "string": "String",
+    "number": "Number",
+    "boolean": "Boolean",
+    "date": "Date",
+    "enum": "Enum",
+    "array": "Array"
+  },
+  "fieldTypeDesc": {
+    "string": "Text values",
+    "number": "Numeric values",
+    "boolean": "True/false values",
+    "date": "Date/time values",
+    "enum": "Fixed set of values",
+    "array": "List of values"
+  },
+  "fieldOptions": {
+    "identity": "Identity",
+    "options": "Options",
+    "validations": "Validations",
+    "required": "Required",
+    "requiredHint": "Field must be provided in the input",
+    "requiredBadge": "Will error if missing",
+    "nullable": "Nullable",
+    "nullableHint": "Field can have a null value"
+  },
+  "validations": {
+    "string": {
+      "minLength": "Min Length",
+      "maxLength": "Max Length",
+      "exactLength": "Exact Length",
+      "format": "Format",
+      "email": "Email",
+      "url": "URL",
+      "uuid": "UUID",
+      "cuid": "CUID",
+      "regex": "Regex Pattern",
+      "regexPlaceholder": "e.g., ^[a-z]+$",
+      "content": "Content",
+      "startsWith": "Starts With",
+      "endsWith": "Ends With",
+      "includes": "Includes",
+      "transforms": "Transforms",
+      "trim": "Trim whitespace",
+      "lowercase": "To lowercase",
+      "uppercase": "To uppercase"
+    },
+    "number": {
+      "range": "Range",
+      "min": "Minimum",
+      "max": "Maximum",
+      "constraints": "Constraints",
+      "integer": "Integer only",
+      "positive": "Positive (> 0)",
+      "negative": "Negative (< 0)",
+      "nonNegative": "Non-negative (>= 0)",
+      "nonPositive": "Non-positive (<= 0)",
+      "finite": "Finite",
+      "multipleOf": "Multiple Of"
+    },
+    "date": {
+      "range": "Date Range",
+      "minDate": "Minimum Date",
+      "maxDate": "Maximum Date"
+    },
+    "array": {
+      "itemType": "Item Type",
+      "selectItemType": "Select item type",
+      "length": "Length",
+      "minItems": "Min Items",
+      "maxItems": "Max Items",
+      "exactLength": "Exact Length",
+      "constraints": "Constraints",
+      "nonEmpty": "Non-empty (at least 1 item)"
+    },
+    "enum": {
+      "values": "Enum Values",
+      "valuesHint": "Enter values separated by commas",
+      "valuesPlaceholder": "admin, user, guest",
+      "preview": "Preview",
+      "noValues": "No values defined"
+    },
+    "boolean": {
+      "noValidations": "Boolean fields don't have additional validations. They accept",
+      "trueOrFalse": "or",
+      "values": "values."
+    }
+  },
+  "preview": {
+    "title": "Generated Code",
+    "viewCode": "View Code",
+    "noSchema": "No schema selected",
+    "noCode": "No Code to Preview",
+    "addFieldsHint": "Add fields to your schema to generate code.",
+    "selectSchemaHint": "Create or select a schema to see generated code.",
+    "zodSchema": "Zod Schema",
+    "typescript": "TypeScript",
+    "fullModule": "Full Module"
+  },
+  "outputSettings": {
+    "title": "Output Settings",
+    "description": "Configure how the code is generated",
+    "typeGeneration": "Type Output Style",
+    "useZodInfer": "Infer type from schema",
+    "useInterface": "Explicit interface",
+    "useType": "Explicit type alias",
+    "formatting": "Formatting",
+    "includeSemicolons": "Use semicolons",
+    "includeComments": "Include comments",
+    "exportTypes": "Include exports",
+    "schemaSuffix": "Schema Name Suffix",
+    "schemaSuffixHint": "e.g., User + \"Schema\" = UserSchema",
+    "typeSuffix": "Type Name Suffix",
+    "typeSuffixHint": "e.g., User + \"Type\" = UserType"
+  },
+  "import": {
+    "title": "Import from TypeScript",
+    "description": "Paste a TypeScript interface or type to convert it to a schema",
+    "placeholder": "interface User {\n  id: string;\n  name: string;\n  email: string;\n  age?: number;\n}",
+    "button": "Import",
+    "hint": "Supports interface and type definitions",
+    "loadExample": "Load Example",
+    "supportedSyntax": "Supported syntax",
+    "errorEmpty": "Please paste some TypeScript code",
+    "errorParse": "Could not parse the TypeScript code. Make sure it's a valid interface or type declaration."
+  },
+  "newSchema": {
+    "title": "New Schema",
+    "description": "Create a new schema from scratch",
+    "namePlaceholder": "e.g., UserSchema, ProductData",
+    "schemaDescription": "Description (optional)",
+    "schemaDescriptionPlaceholder": "What does this schema represent?"
+  },
+  "help": {
+    "title": "How to Use ZodSmith",
+    "gettingStarted": "Getting Started",
+    "gettingStartedContent": "ZodSmith is a visual builder for creating Zod schemas. You can define your data models visually and generate TypeScript code automatically.",
+    "creatingSchema": "Creating a Schema",
+    "creatingSchemaContent": "Click \"New Schema\" in the sidebar or use a template to get started. Give your schema a name and optional description.",
+    "addingFields": "Adding Fields",
+    "addingFieldsContent": "Use the \"Add Field\" button to create new fields. Each field has a name, type, and optional validations.",
+    "fieldTypes": "Field Types",
+    "fieldTypesContent": "Supported types include String, Number, Boolean, Date, Enum, and Array. Each type has specific validations available.",
+    "validations": "Validations",
+    "validationsContent": "Click on a field to edit its validations. String fields can have min/max length, email format, etc. Number fields can have ranges and constraints.",
+    "codePreview": "Code Preview",
+    "codePreviewContent": "Click the code button on the right to see generated Zod schema, TypeScript types, or a full module with both.",
+    "savingSchemas": "Saving Schemas",
+    "savingSchemaContent": "Your schemas are automatically saved to local storage. You can manage them from the sidebar.",
+    "templates": "Templates",
+    "templatesContent": "Use pre-built templates for common schemas like User, Product, Address, etc. Templates give you a starting point that you can customize.",
+    "keyboardShortcuts": "Tips",
+    "tip1": "Drag fields to reorder them",
+    "tip2": "Click a field to edit its properties",
+    "tip3": "Use templates to get started quickly",
+    "tip4": "Generated code updates in real-time"
+  },
+  "helpDialog": {
+    "title": "How to Use ZodSmith",
+    "description": "Visual builder for creating Zod schemas and TypeScript types",
+    "sections": {
+      "gettingStarted": {
+        "title": "Getting Started",
+        "createSchema": {
+          "title": "Create a Schema",
+          "description": "Click 'New Schema' in the sidebar or use the 'Create New Schema' button to start building your data model."
+        },
+        "useTemplates": {
+          "title": "Use Templates",
+          "description": "Choose from predefined templates like User, Product, Address, or API Response to quickly start with common schema patterns."
+        },
+        "importTs": {
+          "title": "Import TypeScript",
+          "description": "Paste an existing TypeScript interface or type definition to automatically convert it into a visual schema."
+        }
+      },
+      "buildingSchema": {
+        "title": "Building Your Schema",
+        "addFields": {
+          "title": "Add Fields",
+          "description": "Click 'Add Field' and select a type: string, number, boolean, date, enum, or array. Each field type has its own validation options."
+        },
+        "reorderFields": {
+          "title": "Reorder Fields",
+          "description": "Drag and drop fields using the grip handle on the left side to reorder them in your schema."
+        },
+        "configureValidations": {
+          "title": "Configure Validations",
+          "description": "Click on any field to open the editor panel and configure validations like length limits, formats, regex patterns, and more."
+        }
+      },
+      "fieldOptions": {
+        "title": "Field Options",
+        "required": {
+          "title": "Required Fields",
+          "description": "Toggle the 'Required' switch to make a field mandatory. Required fields will fail validation if not provided."
+        },
+        "nullable": {
+          "title": "Nullable Fields",
+          "description": "Enable 'Nullable' to allow null values for a field. The generated type will include '| null'."
+        },
+        "defaultValue": {
+          "title": "Default Values",
+          "description": "Set a default value that will be used when the field is not provided in the input data."
+        }
+      },
+      "fieldTypes": {
+        "title": "Field Types & Validations",
+        "string": "min/max length, exact length, email, url, uuid, cuid, regex, startsWith, endsWith, includes, trim, lowercase, uppercase",
+        "number": "min/max, integer, finite, positive, negative, non-negative, non-positive, multipleOf",
+        "boolean": "No additional validations needed",
+        "date": "minimum date, maximum date",
+        "enum": "Define a list of allowed string values",
+        "array": "item type, min/max items, exact length, non-empty"
+      },
+      "codeOutput": {
+        "title": "Code Output",
+        "previewTabs": {
+          "title": "Preview Tabs",
+          "description": "Click the code button on the right to open the preview. Switch between Zod Schema, TypeScript types, and Full Module views."
+        },
+        "copyCode": {
+          "title": "Copy Code",
+          "description": "Click the copy button to copy the generated code to your clipboard, ready to paste into your project."
+        },
+        "outputSettings": {
+          "title": "Output Settings",
+          "description": "Configure the output style: choose between z.infer, interface, or type. Customize semicolons, comments, exports, and naming conventions."
+        }
+      },
+      "saving": {
+        "title": "Saving & Managing Schemas",
+        "saveSchema": {
+          "title": "Save Schema",
+          "description": "Click 'Save' to store your schema in local storage. Saved schemas appear in the 'Schemas' tab of the sidebar."
+        },
+        "duplicate": {
+          "title": "Duplicate Schema",
+          "description": "Use the duplicate option in the schema menu to create a copy. Perfect for creating variations without starting over."
+        }
+      },
+      "customization": {
+        "title": "Customization",
+        "theme": {
+          "title": "Theme",
+          "description": "Toggle between light and dark mode using the theme button in the header. Your preference is saved automatically."
+        },
+        "language": {
+          "title": "Language",
+          "description": "Switch between available languages using the language selector. The interface will update immediately."
+        }
+      },
+      "tips": {
+        "title": "Tips & Best Practices",
+        "pascalCase": "Use PascalCase for schema names (e.g., UserProfile, ProductData)",
+        "camelCase": "Use camelCase for field names (e.g., firstName, createdAt)",
+        "dragDrop": "Drag fields to reorder them - the order is preserved in generated code",
+        "realTime": "Generated code updates in real-time as you make changes"
+      }
+    }
+  },
+  "footer": {
+    "builtWith": "Built with",
+    "by": "by"
+  },
+  "defaults": {
+    "string": "e.g., \"default text\"",
+    "number": "e.g., 0",
+    "boolean": "true or false",
+    "date": "e.g., 2024-01-01",
+    "enum": "e.g., admin",
+    "array": "Leave empty for []"
+  },
+  "fieldEditor": {
+    "title": "Edit Field",
+    "description": "Configure field properties and validations"
+  },
+  "schemaTemplates": {
+    "user": {
+      "name": "User",
+      "description": "Basic user account schema with authentication fields",
+      "schemaName": "User",
+      "schemaDescription": "User account information",
+      "fields": {
+        "id": "Unique identifier",
+        "email": "User email address",
+        "name": "Full name",
+        "username": "Unique username",
+        "age": "User age",
+        "isActive": "Account active status",
+        "role": "User role",
+        "createdAt": "Account creation date"
+      }
+    },
+    "product": {
+      "name": "Product",
+      "description": "E-commerce product schema with pricing and inventory",
+      "schemaName": "Product",
+      "schemaDescription": "Product information",
+      "fields": {
+        "id": "Product ID",
+        "name": "Product name",
+        "description": "Product description",
+        "price": "Product price",
+        "quantity": "Stock quantity",
+        "sku": "Stock Keeping Unit",
+        "category": "Product category",
+        "tags": "Product tags",
+        "isAvailable": "Availability status"
+      }
+    },
+    "address": {
+      "name": "Address",
+      "description": "Postal address schema for shipping and billing",
+      "schemaName": "Address",
+      "schemaDescription": "Postal address information",
+      "fields": {
+        "street": "Street address",
+        "street2": "Apartment, suite, etc.",
+        "city": "City name",
+        "state": "State or province",
+        "postalCode": "ZIP or postal code",
+        "country": "Country code (ISO 3166-1 alpha-2)"
+      }
+    },
+    "apiResponse": {
+      "name": "API Response",
+      "description": "Standard API response wrapper schema",
+      "schemaName": "ApiResponse",
+      "schemaDescription": "Standard API response wrapper",
+      "fields": {
+        "success": "Request success status",
+        "message": "Response message",
+        "errorCode": "Error code if failed",
+        "timestamp": "Response timestamp"
+      }
+    },
+    "blogPost": {
+      "name": "Blog Post",
+      "description": "Content management blog post schema",
+      "schemaName": "BlogPost",
+      "schemaDescription": "Blog post content",
+      "fields": {
+        "id": "Post ID",
+        "title": "Post title",
+        "slug": "URL slug",
+        "content": "Post content (markdown)",
+        "excerpt": "Short excerpt",
+        "authorId": "Author user ID",
+        "status": "Publication status",
+        "tags": "Post tags",
+        "publishedAt": "Publication date",
+        "createdAt": "Creation date"
+      }
+    },
+    "contactForm": {
+      "name": "Contact Form",
+      "description": "Simple contact form submission schema",
+      "schemaName": "ContactForm",
+      "schemaDescription": "Contact form submission",
+      "fields": {
+        "name": "Sender name",
+        "email": "Sender email",
+        "subject": "Message subject",
+        "message": "Message content",
+        "phone": "Phone number"
+      }
+    },
+    "login": {
+      "name": "Login",
+      "description": "Authentication login credentials schema",
+      "schemaName": "LoginCredentials",
+      "schemaDescription": "Login form data",
+      "fields": {
+        "email": "Email address",
+        "password": "Password",
+        "rememberMe": "Remember session"
+      }
+    },
+    "settings": {
+      "name": "Settings",
+      "description": "Application settings/preferences schema",
+      "schemaName": "UserSettings",
+      "schemaDescription": "User preferences and settings",
+      "fields": {
+        "theme": "UI theme preference",
+        "language": "Preferred language (ISO 639-1)",
+        "notifications": "Enable notifications",
+        "emailDigest": "Email digest frequency",
+        "timezone": "User timezone"
+      }
+    }
+  }
+}

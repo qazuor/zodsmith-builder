@@ -1,0 +1,33 @@
+{
+  "theme": {
+    "toggle": "Cambiar tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "language": {
+    "select": "Seleccionar idioma"
+  },
+  "actions": {
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "reset": "Restablecer",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "apply": "Aplicar",
+    "clear": "Limpiar todo"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "empty": "Sin elementos"
+  },
+  "footer": {
+    "madeWith": "Hecho con",
+    "using": "usando"
+  }
+}

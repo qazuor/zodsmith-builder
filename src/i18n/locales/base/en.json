@@ -1,0 +1,33 @@
+{
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "select": "Select language"
+  },
+  "actions": {
+    "copy": "Copy",
+    "copied": "Copied!",
+    "reset": "Reset",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "apply": "Apply",
+    "clear": "Clear All"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "empty": "No items"
+  },
+  "footer": {
+    "madeWith": "Made with",
+    "using": "using"
+  }
+}
